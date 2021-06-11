@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import TreeContent from '../components/TreeContent.svelte'
+
+export let content
+---
+
+<BaseLayout title={`EdgeTree - ${content.title}`}>
+  <slot></slot>
+
+  <TreeContent:load tree={content} />
+</BaseLayout>
