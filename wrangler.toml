@@ -2,14 +2,9 @@ name = "edgetree"
 type = "webpack"
 
 account_id = "1c1f1e0e790dbe378722231e83953bd3"
-# workers_dev = true
-# route = "edgetree.sinclair.software/api/*"
-# zone_id = "e1b35f5e84cad9150ddd59df16d2847b"
-# webpack_config = "node_modules/flareact/webpack"
-
+route = "edgetree.sinclair.software/*"
+zone_id = "e1b35f5e84cad9150ddd59df16d2847b"
 workers_dev = true
-route = ""
-zone_id = ""
 webpack_config = "node_modules/flareact/webpack"
 
 [site]
