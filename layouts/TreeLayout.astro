@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
-import TreeContent from '../components/TreeContent.svelte'
+// import TreeContent from '../components/TreeContent.svelte'
 
 export let content
 ---
@@ -8,5 +8,5 @@ export let content
 <BaseLayout title={`EdgeTree - ${content.title}`}>
   <slot></slot>
 
-  <TreeContent:load tree={content} />
+  <!-- <TreeContent:load tree={content} /> -->
 </BaseLayout>

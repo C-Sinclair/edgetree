@@ -1,14 +1,14 @@
 ---
 import Layout from '../layouts/BaseLayout.astro'
-import TreeCard from '../components/TreeCard.svelte'
+// import TreeCard from '../components/TreeCard.svelte'
   
 export let collection
 
 export async function createCollection() {
-  const trees = Astro.fetchContent('./tree/*.md')
+  // const trees = Astro.fetchContent('./tree/*.md')
   return {
     async data() {
-      return trees
+      return []
     },
   }  
 }
@@ -17,8 +17,8 @@ export async function createCollection() {
 <Layout>
   <h5>Results {collection.start + 1} – {collection.end + 1} of {collection.total}</h5>
   <ul>
-    {collection.data?.map(tree => (
+    <!-- {collection.data?.map(tree => (
       <TreeCard tree={tree} />
-    ))}
+    ))} -->
   </ul>
 </Layout>
